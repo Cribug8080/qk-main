@@ -6,18 +6,19 @@ import {
   start,
   addGlobalUncaughtErrorHandler,
 } from 'qiankun';
+import { HOST } from './utils'
 
 const apps = [
   {
     name: 'React',
-    entry: '//localhost:3001',
+    entry: `//${HOST}:3001`,
     container: '#subapp-container',
     activeRule: '/react',
     path: '/react',
   },
   {
     name: 'Vue',
-    entry: '//localhost:3002',
+    entry: `//${HOST}:3002`,
     container: '#subapp-container',
     path: '/vue',
     activeRule: '/vue',

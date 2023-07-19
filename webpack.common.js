@@ -1,14 +1,13 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
   entry: './src/index.js',
   devServer: {
     static: false,
     historyApiFallback: true,
   },
-  devtool: 'source-map',
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
