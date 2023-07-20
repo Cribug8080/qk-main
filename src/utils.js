@@ -1,2 +1,2 @@
-// export const isDev = process.env.NODE_ENT === 'development';
-export const HOST = 'wangli.pro';
+export const isDev = process.env.NODE_ENV === 'development';
+export const HOST = !isDev ? 'localhost' : 'wangli.pro';

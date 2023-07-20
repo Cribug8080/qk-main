@@ -14,10 +14,27 @@ module.exports = {
     clean: true,
     publicPath: '/',
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg|gif)$/i,
+        type: 'asset/resource'
+      }
+    ],
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    }),
     new HtmlWebpackPlugin({
       title: '007',
-      template: './public/index.html',
+      template: './src/index.html',
     }),
   ],
   optimization: {

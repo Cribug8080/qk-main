@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.micro-app {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.micro-header {
+  display: flex;
+  height: 50px;
+  background: linear-gradient(360deg, #000, #003656);
+}
+.micro-header-logo {
+  width: 70px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+.micro-header-nav {
+  display: flex;
+  flex-direction: row;
+  line-height: 50px;
+  color: white;
+}
+.nav-active {
+  color: #ff7272;
+}
+.micro-header-nav>div {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+#subapp-container {
+  width: 100%;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  #subapp-container {
+    background-image: url(./assert/home.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #subapp-container {
+    /* background: linear-gradient(dimgray 30%, #00a2ff); */
+    background-image: url(./assert/home_phone.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}

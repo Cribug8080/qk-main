@@ -12,7 +12,7 @@ export function registerNav(apps, container) {
         history.pushState(undefined, '', pathName);
       })
       if (isActive) {
-        div.style = 'color: #f6ff00;';
+        div.className = 'nav-active';
       }
       container.appendChild(div);
     });

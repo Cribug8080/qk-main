@@ -7,6 +7,7 @@ import {
   addGlobalUncaughtErrorHandler,
 } from 'qiankun';
 import { HOST } from './utils'
+import './index.css';
 
 const apps = [
   {
@@ -43,19 +44,11 @@ window.addEventListener('popstate', () => {
 
 // setDefaultMountApp('/');
 
-window.addEventListener('single-spa:before-app-change', (evt) => {
-  console.log('single-spa is about to mount/unmount applications!');
-  console.log(evt.detail.originalEvent) // PopStateEvent
-  console.log(evt.detail.newAppStatuses) // { app1: MOUNTED }
-  console.log(evt.detail.appsByNewStatus) // { MOUNTED: ['app1'], NOT_MOUNTED: [] }
-  console.log(evt.detail.totalAppChanges) // 1
-});
+// function globalErrorHandle(...args) {
+//   console.log('args', args)
+// }
 
-function globalErrorHandle(...args) {
-  console.log('args', args)
-}
-
-addGlobalUncaughtErrorHandler(globalErrorHandle);
+// addGlobalUncaughtErrorHandler(globalErrorHandle);
 
 start();
 
