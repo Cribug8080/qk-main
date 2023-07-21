@@ -4,12 +4,16 @@
 [vue](https://github.com/Cribug8080/qk-vue3)
 
 ## 部署
+
+[ssh免密登陆](https://blog.csdn.net/jeikerxiao/article/details/84105529)
+
+服务器经常github拉不下代码，可以切换仓库使用[gitee](https://gitee.com/)，同步仓库的[方法](https://help.gitee.com/questions/GitHub%E4%BB%93%E5%BA%93%E5%BF%AB%E9%80%9F%E5%AF%BC%E5%85%A5Gitee%E5%8F%8A%E5%90%8C%E6%AD%A5%E6%9B%B4%E6%96%B0)
+
 ### 打包代码
 在服务器安装git、nvm、node、yarn
 clone下来项目
 ```bash
 git clone https://github.com/Cribug8080/qk-main.git
-# 如果失败就curl -O https://github.com/Cribug8080/qk-main/archive/refs/heads/main.zip
 yarn
 yarn build
 ```
