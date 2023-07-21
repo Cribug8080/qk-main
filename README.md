@@ -9,6 +9,13 @@
 
 服务器经常github拉不下代码，可以切换仓库使用[gitee](https://gitee.com/)，同步仓库的[方法](https://help.gitee.com/questions/GitHub%E4%BB%93%E5%BA%93%E5%BF%AB%E9%80%9F%E5%AF%BC%E5%85%A5Gitee%E5%8F%8A%E5%90%8C%E6%AD%A5%E6%9B%B4%E6%96%B0)
 
+同步两个仓库的代码，使用`qkpush`推送代码。
+```bash
+# 编辑文件.zshrc或者.bashrc `alias qkpush="git push;git push github;"`
+git remote add origin [gitee地址]
+git remote add github [github地址]
+```
+
 ### 打包代码
 在服务器安装git、nvm、node、yarn
 clone下来项目
