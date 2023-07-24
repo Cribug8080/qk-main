@@ -5,7 +5,7 @@ export function registerNav(apps, container) {
     container.innerHTML = '';
     apps.forEach(v => {
       const { activeRule, name, path: pathName } = v;
-      const isActive = activeRule === path;
+      const isActive = path.startsWith(activeRule);
       const div = document.createElement('div')
       div.innerText = name;
       div.onclick = !isActive && (() => {
