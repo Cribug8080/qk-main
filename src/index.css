@@ -52,7 +52,7 @@ code {
 
 @media screen and (min-width: 1024px) {
   #subapp-container {
-    background-image: url(./assert/home.jpg);
+    /* background-image: url(./assert/home.jpg); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
