@@ -35,6 +35,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: '007',
       template: './src/index.html',
+      favicon: './src/assert/favicon.ico'
     }),
   ],
   optimization: {
