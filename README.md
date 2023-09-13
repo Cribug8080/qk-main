@@ -78,6 +78,7 @@ if ($request_method = 'OPTIONS') {
 root /
 ```
 
+配置index.html文件不缓存，其他js文件缓存30天
 
 
 
