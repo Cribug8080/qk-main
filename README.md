@@ -65,7 +65,7 @@ server {
 
 子应用
 
-配置跨域()
+配置跨域
 ```conf
 add_header Access-Control-Allow-Origin *;
 add_header Access-Control-Allow-Methods 'GET, POST, OPTIONS';
